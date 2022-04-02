@@ -61,5 +61,5 @@ func (capturer *Capturer) capture(f func()) []string {
 		panic(err)
 	}
 
-	return strings.Split(buf.String(), "\n")
+	return strings.Split(strings.Trim(buf.String(), "\n"), "\n")
 }
