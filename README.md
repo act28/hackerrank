@@ -1,2 +1,3 @@
-# hackerrank
-HackerRank Examples
+# HackerRank Examples
+
+Selected examples to HackerRank code challenges
