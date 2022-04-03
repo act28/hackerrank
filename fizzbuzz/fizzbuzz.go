@@ -11,7 +11,7 @@ func main() {
 func FizzBuzz(n int32) {
 	var i int32
 	for i = 1; i <= n; i++ {
-		if i%3 == 0 && i%5 == 0 {
+		if i%15 == 0 {
 			fmt.Println("FizzBuzz")
 		} else if i%3 == 0 {
 			fmt.Println("Fizz")
