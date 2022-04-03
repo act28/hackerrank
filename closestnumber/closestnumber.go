@@ -31,37 +31,14 @@ func closestNumbers(numbers []int32) {
 	minDiff = numbers[1] - numbers[0]
 
 	var i int32
-	for i = 2; i <= int32(len(numbers)-1); i++ {
+	for i = 2; i < int32(len(numbers)); i++ {
 		minDiff = min(minDiff, numbers[i]-numbers[i-1])
 	}
 
-	for i = 1; i <= int32(len(numbers)-1); i++ {
+	for i = 1; i < int32(len(numbers)); i++ {
 		if numbers[i]-numbers[i-1] == minDiff {
 			fmt.Println(numbers[i-1], numbers[i])
 		}
-	}
-	// var i int32
-	// for i = 1; i < int32(len(numbers)); i++ {
-	// 	fmt.Println(numbers[i-1], nearestNumberBinarySearch(numbers, i, int32(len(numbers)-1), numbers[i-1]))
-	// }
-}
-
-func nearestNumberBinarySearch(numbers []int32, start int32, end int32, current int32) int32 {
-	mid := int32((start + end) / 2)
-	if numbers[mid] == current {
-		return numbers[mid]
-	}
-	if start == end-1 {
-		if numbers[end]-current >= numbers[start]-current {
-			return numbers[start]
-		} else {
-			return numbers[end]
-		}
-	}
-	if numbers[mid] > current {
-		return nearestNumberBinarySearch(numbers, start, mid, current)
-	} else {
-		return nearestNumberBinarySearch(numbers, mid, end, current)
 	}
 }
 
