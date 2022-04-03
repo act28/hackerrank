@@ -30,12 +30,11 @@ func closestNumbers(numbers []int32) {
 	var minDiff int32
 	minDiff = numbers[1] - numbers[0]
 
-	var i int32
-	for i = 2; i < int32(len(numbers)); i++ {
+	for i := 2; i < len(numbers); i++ {
 		minDiff = min(minDiff, numbers[i]-numbers[i-1])
 	}
 
-	for i = 1; i < int32(len(numbers)); i++ {
+	for i := 1; i < len(numbers); i++ {
 		if numbers[i]-numbers[i-1] == minDiff {
 			fmt.Println(numbers[i-1], numbers[i])
 		}

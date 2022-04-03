@@ -24,8 +24,7 @@ func birthdayCakeCandles(candles []int32) int32 {
 
 	var cnt int32 = 0
 	maxHeight := candles[len(candles)-1]
-	var i int
-	for i = len(candles) - 1; i >= 0; i-- {
+	for i := len(candles) - 1; i >= 0; i-- {
 		if candles[i] < maxHeight {
 			break
 		}
@@ -33,13 +32,6 @@ func birthdayCakeCandles(candles []int32) int32 {
 	}
 
 	return cnt
-}
-
-func max(a, b int32) int32 {
-	if a > b {
-		return a
-	}
-	return b
 }
 
 func main() {
