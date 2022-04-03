@@ -27,9 +27,11 @@ func plusMinus(arr []int32) {
 		}
 	}
 
-	fmt.Printf("%.6f\n", p/cnt)
-	fmt.Printf("%.6f\n", n/cnt)
-	fmt.Printf("%.6f\n", z/cnt)
+	if cnt > 0 {
+		fmt.Printf("%.6f\n", p/cnt)
+		fmt.Printf("%.6f\n", n/cnt)
+		fmt.Printf("%.6f\n", z/cnt)
+	}
 }
 
 func main() {
