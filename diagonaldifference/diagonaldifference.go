@@ -29,7 +29,7 @@ func diagonalDifference(arr [][]int32) int32 {
 
 func abs(x int32) int32 {
 	if x < 0 {
-		if x <= -(math.MaxInt32) {
+		if x == -(math.MaxInt32) {
 			return math.MaxInt32
 		}
 		return -x
