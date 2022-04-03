@@ -7,7 +7,7 @@ import (
 	"github.com/stretchr/testify/assert"
 )
 
-func Test_FizzBuzz(t *testing.T) {
+func TestFizzBuzz(t *testing.T) {
 	expected := []string{
 		"1",
 		"2",

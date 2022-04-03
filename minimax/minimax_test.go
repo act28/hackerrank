@@ -7,7 +7,7 @@ import (
 	"github.com/stretchr/testify/assert"
 )
 
-func TestStaircase(t *testing.T) {
+func TestMiniMax(t *testing.T) {
 	testCases := []struct {
 		in  []int32
 		exp []string
