@@ -22,7 +22,7 @@ func TestDiagonalDifference(t *testing.T) {
 	}
 
 	for _, tc := range testCases {
-		t.Run("", func(t *testing.T) {
+		t.Run("diagonal difference", func(t *testing.T) {
 			output := diagonalDifference(tc.in)
 			assert.Equal(t, tc.exp, output)
 		})

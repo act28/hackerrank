@@ -31,7 +31,7 @@ func TestStaircase(t *testing.T) {
 	}
 
 	for _, tc := range testCases {
-		t.Run("", func(t *testing.T) {
+		t.Run("minimax", func(t *testing.T) {
 			output := capturer.CaptureOutput(func() {
 				miniMaxSum(tc.in)
 			})

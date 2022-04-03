@@ -19,7 +19,7 @@ func TestClosestNumber(t *testing.T) {
 	}
 
 	for _, tc := range testCases {
-		t.Run("", func(t *testing.T) {
+		t.Run("closest numbers", func(t *testing.T) {
 			output := capturer.CaptureOutput(func() {
 				closestNumbers(tc.in)
 			})

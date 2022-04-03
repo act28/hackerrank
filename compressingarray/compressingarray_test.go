@@ -65,7 +65,7 @@ func TestCompressingArray(t *testing.T) {
 	}
 
 	for _, tc := range testCases {
-		t.Run("", func(t *testing.T) {
+		t.Run("compressing array", func(t *testing.T) {
 			output := getMinLength(tc.in, tc.max)
 			assert.Equal(t, tc.exp, output, tc.max)
 		})

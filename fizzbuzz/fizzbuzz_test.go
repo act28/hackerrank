@@ -111,7 +111,7 @@ func Test_FizzBuzz(t *testing.T) {
 		"Buzz",
 	}
 
-	t.Run("", func(t *testing.T) {
+	t.Run("fizzbuzz", func(t *testing.T) {
 		output := capturer.CaptureOutput(func() {
 			FizzBuzz(100)
 		})
