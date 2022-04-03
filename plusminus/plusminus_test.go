@@ -3,7 +3,7 @@ package main
 import (
 	"testing"
 
-	"github.com/act28/hackerrank.git/capturer"
+	"github.com/act28/hackerrank/capturer"
 	"github.com/stretchr/testify/assert"
 )
 
